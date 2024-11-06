@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的自我介紹</title>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #a5f3fc 0%, #93c5fd 100%);
+            background-attachment: fixed;
+        }
+        .pattern-bg {
+            background-image: 
+                radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 2px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
 </head>
-<body class="bg-gray-50">
+<body class="gradient-bg pattern-bg min-h-screen">
     <div class="max-w-4xl mx-auto p-4 sm:p-8">
         <!-- 個人資料卡片 -->
-        <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+        <div class="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 mb-6">
             <div class="flex flex-col sm:flex-row items-center mb-6">
                 <img src="/api/placeholder/150/150" alt="個人照片" class="rounded-full w-28 h-28 object-cover mb-4 sm:mb-0 sm:mr-6"/>
                 <div class="text-center sm:text-left">
@@ -60,7 +71,7 @@
             <div class="border-t border-gray-200 pt-6">
                 <h2 class="text-xl font-semibold text-gray-800 mb-4">專長與成就</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="bg-blue-50/50 backdrop-blur-sm p-4 rounded-lg">
                         <h3 class="font-medium text-gray-800 mb-2">學業表現</h3>
                         <ul class="text-gray-600 space-y-2">
                             <li>• 數理資優班</li>
@@ -68,7 +79,7 @@
                             <li>• 校內數學競賽第三名</li>
                         </ul>
                     </div>
-                    <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="bg-blue-50/50 backdrop-blur-sm p-4 rounded-lg">
                         <h3 class="font-medium text-gray-800 mb-2">未來目標</h3>
                         <ul class="text-gray-600 space-y-2">
                             <li>• 考上理想大學醫學系</li>
@@ -81,7 +92,7 @@
         </div>
 
         <!-- 生活照片牆 -->
-        <div class="bg-white rounded-xl shadow-lg p-6">
+        <div class="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6">
             <h2 class="text-xl font-semibold text-gray-800 mb-4">生活點滴</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 <img src="/api/placeholder/200/200" alt="生活照片" class="rounded-lg w-full h-40 object-cover"/>
