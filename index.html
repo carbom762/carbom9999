@@ -1,20 +1,94 @@
-<body>
-    <h1>王小明的網頁</h1>
-    <img src="flightz.png" width="200">
-    
-    <h2>自我介紹</h2>
-    <p>哈囉！我是小明，我喜歡寫程式。</p>
-    
-    <h2>我的興趣</h2>
-    <ul>
-        <li>打籃球</li>
-        <li>聽音樂</li>
-        <li>寫程式</li>
-    </ul>
-    
-    <h2>聯絡方式</h2>
-    <p>Email: example@gmail.com</p>
-    <a href="https://www.cchs.chc.edu.tw/">CCHS</a>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的自我介紹</title>
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-4xl mx-auto p-4 sm:p-8">
+        <!-- 個人資料卡片 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+            <div class="flex flex-col sm:flex-row items-center mb-6">
+                <img src="/api/placeholder/150/150" alt="個人照片" class="rounded-full w-28 h-28 object-cover mb-4 sm:mb-0 sm:mr-6"/>
+                <div class="text-center sm:text-left">
+                    <h1 class="text-2xl font-bold text-gray-800 mb-2">小明</h1>
+                    <p class="text-gray-600">高中二年級學生</p>
+                    <p class="text-gray-600">新北市立○○高中</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 pt-6">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4">關於我</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    大家好！我是小明，目前是高二學生。我是一個活潑開朗的人，喜歡交朋友。在學校裡，我是籃球社的成員，也參加學生會活動。我的夢想是成為一名醫生，希望將來能幫助更多人。
+                </p>
+            </div>
+
+            <!-- 興趣愛好 -->
+            <div class="border-t border-gray-200 pt-6">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4">興趣愛好</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">籃球</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">攝影</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">聽音樂</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">看電影</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">閱讀</span>
+                </div>
+            </div>
+
+            <!-- 課外活動 -->
+            <div class="border-t border-gray-200 pt-6">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4">課外活動</h2>
+                <div class="space-y-3">
+                    <div class="flex items-center">
+                        <span class="text-blue-600 mr-2">🏀</span>
+                        <p class="text-gray-600">籃球社 - 社團幹部</p>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-blue-600 mr-2">📷</span>
+                        <p class="text-gray-600">學生會 - 攝影組組長</p>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-blue-600 mr-2">🎯</span>
+                        <p class="text-gray-600">校內科展 - 團隊成員</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 目標專長 -->
+            <div class="border-t border-gray-200 pt-6">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4">專長與成就</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-800 mb-2">學業表現</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• 數理資優班</li>
+                            <li>• 全民英檢中級</li>
+                            <li>• 校內數學競賽第三名</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-medium text-gray-800 mb-2">未來目標</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• 考上理想大學醫學系</li>
+                            <li>• 積極參與志工服務</li>
+                            <li>• 提升英語口說能力</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 生活照片牆 -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">生活點滴</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <img src="/api/placeholder/200/200" alt="生活照片" class="rounded-lg w-full h-40 object-cover"/>
+                <img src="/api/placeholder/200/200" alt="生活照片" class="rounded-lg w-full h-40 object-cover"/>
+                <img src="/api/placeholder/200/200" alt="生活照片" class="rounded-lg w-full h-40 object-cover"/>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
